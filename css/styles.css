@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary: #E4F2E7;
+    --secondary: #93BFB7;
+    --accent: #387373;
+    --complementary: #C4EEF2;
+    --complementary: #7AB8BF;
+}
+
+/* Set the font-family for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary);
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; /* Default font size for mobile */
+    line-height: 1.5; /* Default line height */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+main {
+    flex: 1;
+    padding: 1.5em;
+}
+
+footer {
+    height: 10vh;
+}
+
+.logo-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.nav-link {
+    display: flex;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    border-radius: 12px;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+nav a {
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    display: flex;
+    flex: 1;
+    background-color: #387373;
+}
+
+nav a:hover {
+    background-color: #387373;
+}
+
+nav ul li {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0.2em;
+    border-radius: 1px solid var(--complementary);
+}
+
+nav ul li:last-child {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 0.2em;
+    border-radius: 1px solid var(--complementary);
+}
+
+footer {
+    background-color: var(--complementary);
+}
+
+.img-in-box {
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+
+button {
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    font-size: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 80px;
+}
+
+button:hover {
+    background-color: var(--secondary);
+}
+
+#masthead {
+    background-color: var(--complementary);
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 12px;
+    text-align: center;
+    background-image: url(../img/mast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.tagline h1 {
+    color: white;
+    font-size: 1em;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: inline;
+}
+
+button {
+    z-index: 999;
+}
+
+
+#active-button {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+#dynamic-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2.4px solid var(--complementary);
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    border-radius: 12px;
+}
+
+#dynamic-content h1 {
+    font-size: 1.5em;
+}
+
+#dynamic-content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.image-and-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-in-dynamic {
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+}
+
+footer ul {
+    display: flex;
+    font-size: larger;
+    list-style: none;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    color: var(--complementary);
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-image {
+    float: none;
+    height: 300px;
+    width: 300px;
+}
+
+.content p {
+    text-align: left;
+    margin: 0;
+}
+
+figure {
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+/* portfolio css */
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 1rem; 
+}
+
+.portfolio-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: calc(33.333% - 1rem); 
+    margin-bottom: 2rem; 
+}
+
+.portfolio-image-container {
+    height: 300px;
+    width: 300px;
+}
+/* Media Query for Tablets and Desktops */
+@media screen and (min-width: 35rem) and (max-width: 80rem) {
+    body {
+        font-size: 1.25rem; 
+        line-height: 1.6; 
+    }
+
+    .image-content {
+        display: block;
+    }
+
+    .article-image {
+        float: left;
+    }
+
+    figure {
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .image-box {
+        flex-basis: 40%;
+    }
+
+    .content-box {
+        flex-basis: 60%;
+    }
+
+    .image-and-content {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 70%;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex: 1;
+        background-color: white;
+        border-radius: 12px;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        padding: 2rem 4rem;
+        border-radius: 12px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    footer ul {
+        font-size: 1.5rem;
+    }
+    .portfolio-box {
+        flex-basis: calc(50% - 1rem); 
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    body {
+        font-size: 1.5rem; 
+        line-height: 1.6; 
+    }
+    main {
+        padding-top: 0;
+    }
+    .logo-img {
+        height: 100px;
+        width: 100px;
+        border-radius: 12px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 2.3em;
+    }
+
+    nav {
+        display: flex;
+        flex: 0.8;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex: 0.5;
+        background-color: white;
+        border-radius: 12px;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+    }
+    
+    nav a {
+        display: flex;
+        flex: 1;
+        text-decoration: none;
+        color: black;
+    }
+
+    nav a:hover {
+        background-color: #387373;
+    }
+    
+    nav ul li {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        padding: 0.2em;
+        border-radius: 1px solid var(--complementary);
+    }
+    
+    nav ul li:last-child {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        padding: 0.2em;
+        border-radius: 1px solid var(--complementary);
+    }
+
+    .dynamic-html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    .image-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image-box {
+        flex-basis: 40%;
+    }
+
+    .content-box {
+        flex-basis: 60%;
+    }
+
+    .articles {
+        margin-top: 1.5em;
+        align-items: flex-start;
+    }
+    .portfolio-box {
+        flex-basis: calc(33.333% - 1rem); 
+    }
+}
